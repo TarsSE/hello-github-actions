@@ -1,5 +1,6 @@
 name: A workflow for my Hello World file
 on: push
+
 jobs:
   build:
     name: Hello world action
@@ -7,5 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: ./action-a
-        with: 
+        with:
           MY_NAME: "Mona"
